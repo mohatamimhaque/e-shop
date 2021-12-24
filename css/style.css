@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubunu', sans-serif;
+}
+:root{
+    --blue:#509cff;
+    --white:#fff;
+    --black:#222;
+    --grey:#f5f5f5;
+    --black2:#999;
+    --black3:rgba(100, 86, 86, 0.08);
+    --cayan:rgb(119, 255, 237);
+    --red:rgb(243, 78, 78);
+    
+
+}
+body{
+    width:96%;
+    margin:auto;
+}
+
+a{
+   text-decoration:none;
+   color:var(--black);
+}
+img{
+    width:100%;
+}
+
+
+.flex{
+    display:flex
+}
+.block{
+    display:block
+}
+
+hr{
+    opacity:70%;
+    margin-top:2px
+   
+}
+
+
+
+/* -----------header-------------*/
+.search-bar{
+    width: 100%;
+    background-color: var(--white);
+    box-shadow:0 7px 25px var(--black3);
+    margin-bottom:5px;
+}
+.logo{
+    width:50px;
+    margin:auto;
+    margin-left:5px;
+}
+.search{
+    position:relative;
+    width:400px;
+    margin: auto;
+
+}
+.search label{
+    position: relative;
+    width:100%
+}
+.search label input{
+    width:100%;
+    height:30px;
+    border-radius:40px;
+    padding:8px 20px;
+    outline:none;
+    border:1px solid var(--black2);
+    padding-left: 35px;
+}
+.search label ion-icon{
+    position: absolute;
+    top:0;
+    left:10px;
+    font-size: 1.2em;
+    color: var(--black);
+
+}
+
+.account{
+     margin: auto;
+     margin-right:15px;
+     
+}
+.account a{
+    font-size:20px;
+    font-style: normal;
+    margin-top:5px;
+    color:var(--blue)
+}
+
+.account p{
+    margin-top:-2px;
+    color:var(--black)
+}
+.account p a{
+    font-size:15px;
+    color:var(--cayan)
+}
+
+
+
+
+
+/*--------------------------menubar------------------------------*/
+
+.menubar{
+    
+    background-color: var(--blue);
+    box-shadow:0px 0px 1px var(--blue);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.menubar li{
+    color:var(--black);
+     list-style: none;
+     padding: 8px;
+     margin: 5px;
+}
+
+.menubar a:hover{
+     color:var(--white)
+}
+
+
+
+
+.menubar .dropdown{
+	position:relative;
+	display:inline-block;
+}
+.menubar .dropdown-content{
+	display:none;
+	position:absolute;
+	background-color:var(--white);
+	min-width:160px;
+	box-shadow: 0px 8px 16px 0px var(--black3);
+    z-index: 1;
+    margin-top: 12px;
+}
+.menubar .dropdown-content a{
+	color:var(--black);
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.dropdown-content a{
+	color:var(--blue);
+}
+
+.menubar .dropdown-content a:hover{
+	background-color: var(--grey);
+    color:var(--blue)
+}
+.dropdown:hover .dropdown-content{
+    transition: 2s;
+    display:block;
+    border-radius: 2px;
+
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: var(--black);
+    padding:2px;
+    border-radius: 2px;
+}
+footer p{
+    color: var(--white);
+    text-align: center;
+}
+footer p a{
+    color:var(--cayan);
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: none;
+    color: var(--red); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 10px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: var(--blue); /* Add a dark-grey background on hover */
+    color:white;
+    box-shadow: 0 0 2px var(--blue);
+  }
+
+
+  @media screen and (max-width: 990px){
+  .search{
+    position:relative;
+    width:200px;
+    margin: auto;
+
+}}
+
+  @media screen and (max-width: 560px){
+.search{
+    position:relative;
+    width:200px;
+    margin: auto;
+}}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubunu', sans-serif;
+}
+:root{
+    --blue:#509cff;
+    --white:#fff;
+    --black:#222;
+    --grey:#f5f5f5;
+    --black2:#999;
+    --black3:rgba(100, 86, 86, 0.08);
+    --cayan:rgb(119, 255, 237);
+    --red:rgb(243, 78, 78);
+    
+
+}
+img{
+    width: 100%;
+}
+.shadow{
+    box-shadow: 0 0px 5px var(--black3);
+}
+.container{
+    width:98%;
+    margin:auto;
+    display: flex;
+    padding:5px;
+}
+.container .gallary ul{
+    display:flex;
+    width:200px;
+    margin:2px auto;
+}
+.container .gallary li{
+    list-style: none;
+    width: 50px;
+    border: 0.5px solid var(--black3);
+    border-radius: 2px;
+    margin: 1px;
+    
+}
+.gallary{
+    width:45%;
+    margin-left:2%;
+}
+.product-info{
+    width: 55%;
+}
+
+.product-info h4{
+    width:100px;
+    color:var(--red);
+    padding: 5px;
+}
+
+.sub-menu{
+    padding: 5px;
+    margin-top: 20px;
+    padding:5px;
+    display:flex;
+}
+.sub-menu a:first-child{
+     margin-right: 20px;
+}
+.sub-menu a:hover{
+    color: var(--cayan);
+}
+.sub-menu a p{
+    font-size: 20px;
+    border-radius: 5px;
+}
+.information #specification{
+    margin-top: 5px;
+    padding: 8px;
+    box-shadow: 0 0px 5px var(--black3);
+    margin-top:10px;
+    
+}
+
+.information #specification p:nth-child(even){
+    padding: 5px 1px;
+    text-align: justify;
+}
+.information #specification p:nth-child(odd){
+    padding: 5px 1px;
+    text-align: justify;
+    border-bottom:1px solid rgb(223, 213, 213);
+}
+.product-info h2{
+    text-align: justify;
+    padding:5px 2px;
+    margin-top: 5px;
+}
+.product-info h3{
+    padding:5px 2px
+}
+.product-info ul{
+    padding:5px;
+    margin-left: 12px;
+}
+.product-info ul li{
+    font-weight: 500;
+    padding:2px 0;
+    text-align: justify;
+}
+.product-info  a p{
+    width:130px;
+    text-align: center;
+    color: var(--blue);
+    border:1px solid var(--blue);
+    padding:10px;
+    border-radius: 3px;
+}
+
+.product-info  a:hover p{
+    box-shadow:0 0 2px var(--blue);
+    background-color:var(--blue);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.information #description{
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px var(--black3);
+}
+
+.information #description h3{
+    margin:5px 0px;
+ 
+}
+.information #description p{
+   padding-bottom: 20px;
+   font-weight: 500px;
+   text-align: justify;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    .container{
+        display:block;
+    }
+    .container .gallary ul{
+        
+        margin-left:15%;
+    }
+    .gallary{
+        width:98%;
+        margin-left:2%;
+    }
+    .product-info{
+        width: 98%;
+    }
+
+
+}

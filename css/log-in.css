@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubunu', sans-serif;
+}
+:root{
+    --blue:#509cff;
+    --white:#fff;
+    --black:#222;
+    --grey:#f5f5f5;
+    --black2:#999;
+    --black3:rgba(100, 86, 86, 0.08);
+    --cayan:rgb(119, 255, 237);
+    --red:rgb(243, 78, 78);
+    
+
+}
+.register{
+    float:right;
+    margin-top:50px;
+    margin-right:13%;
+}
+
+
+.log-in{
+    width:75%;
+    margin:auto;
+    margin-top: 100px;
+    box-shadow:0 0 2px var(--black2);
+    border-radius:5px;
+    padding-bottom: 20px;
+}
+.log-in label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 5px;
+    padding:2px
+}
+
+.number-password{
+    width:40%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top:15px;
+    position: relative;
+    
+    
+}
+.phone{
+    margin-bottom: 25px;
+}
+.log-in input{
+    width:90%;
+    padding:5px;
+    padding-bottom:8px;
+    outline: none;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    
+}
+.log-in :hover input{
+     box-shadow: inset 0 0 2px var(--blue);
+     border: 1px solid var(--blue);
+}
+
+.log-in .forgot{
+    float: right;
+    margin-top:5px;
+}
+.log-in a p{
+    opacity: 80%;
+    color:var(--red);
+}
+.log-in .number-password .button{
+    margin-top: 50px;
+    
+
+}
+.log-in .number-password .button p{
+    
+    width: 100px;
+    padding:8px 12px;
+    border:1px solid var(--blue);
+    border-radius: 3px;
+    margin-top:28px;
+    position: relative;
+    color: var(--blue);
+    text-align: center;
+    font-weight: 600;
+}
+.log-in .number-password .button:hover p{
+    transition: 1s;
+    background-color: var(--blue);
+    color:var(--white);
+    box-shadow: 0 0 2px var(--blue);
+}
+
+
+.log-in .text{
+    
+    margin: auto 2%;
+    opacity: 75%;
+}
+.log-in .text h3{
+    color: rgb(43, 153, 243);
+}
+
+
+.social-media-login{
+    width:43%;
+    margin-right: 5%;
+    margin-left: 10%;
+    display: grid;
+    min-height: 220px;
+    
+
+}
+.title{
+    padding: 5px;
+    font-family: 500;
+    margin: 10px;
+}
+
+
+.social-media-login button{
+      padding:8px;
+      margin-bottom: 25px;
+      width:80%;
+      height: 50px;
+      border:none;
+      border-radius: 3px;
+}
+.social-media-login a{
+    padding:5px;
+}
+.social-media-login .facebook{
+    background-color: var(--blue);
+}
+.social-media-login .facebook:hover{
+    box-shadow: 0 0 2px var(--blue);
+}
+.social-media-login .google{
+    background-color: var(--red);
+}
+.social-media-login .google:hover{
+    box-shadow: 0 0 2px var(--red);
+}
+.social-media-login button .fa,
+.social-media-login button p
+{
+       margin:auto 20px;
+       font-size: 18px;
+       color:var(--white)
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .log-in{
+        width:95%
+    }
+
+    .register{
+       
+        margin-right:3%;
+       
+    }
+    .log-in input{
+        width: 100%;
+    }
+    .social-media-login button{
+        
+        width:100%
+  }
+  .social-media-login{
+    
+    margin-right: 5%;
+    margin-left: 0%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+    .log-in{
+        margin-top:120px;
+        width:95%;
+        display: block;
+        padding-top:5px
+    }
+ .log-in h3{
+        text-align: center;
+    }
+
+.register{
+       
+        margin-right:3%;
+        margin-left:3%;
+    }
+    
+.social-media-login .btn{
+        
+        width:100%
+  }
+  .social-media-login{
+    width:95%;
+    margin-right:2%;
+    margin-left: 3%;
+  }
+ 
+  .number-password{
+    width:95%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top:15px;
+    position: relative;
+    
+    
+}
+  
+
+
+}

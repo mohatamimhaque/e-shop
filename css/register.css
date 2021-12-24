@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubunu', sans-serif;
+}
+:root{
+    --blue:#509cff;
+    --white:#fff;
+    --black:#222;
+    --grey:#f5f5f5;
+    --black2:#999;
+    --black3:rgba(100, 86, 86, 0.08);
+    --cayan:rgb(119, 255, 237);
+    --red:rgb(243, 78, 78);
+    
+
+}
+.login{
+    margin-top:50px;
+    margin-right:13%;
+    margin-left:13%;
+}
+.login h2{
+    float:left;
+    opacity: 80%;
+    text-shadow: 0 0 2px var(--black2);
+    
+}
+.login p{
+    float:right;
+}
+.register{
+    width:75%;
+    margin:auto;
+    box-shadow:0 0 8px var(--black3);
+    border-radius:5px;
+    padding-bottom: 20px;
+    margin-top: 90px;
+    background-color: var(--white);
+}
+.register label{
+    display: block;
+    font-size: 14px;
+    opacity: 100%;
+    margin-bottom: 2px;
+    padding:5px
+}
+
+.number-password{
+    width:40%;
+    padding:8px;
+    margin-top:15px;
+    position: relative;
+    
+    
+}
+.name,
+.phone,
+.password,
+.birthday{
+    margin-bottom: 10px;
+}
+.register input{
+    width:100%;
+    padding:7px;
+    outline: none;
+    border:1px solid var(--black2);
+    border-radius: 4px;
+    
+}
+.register input:hover,
+#gender:hover{
+     box-shadow: inset 0 0 2px var(--blue);
+     border: 1px solid var(--blue);
+}
+
+#gender{
+    padding:8px;
+    border-radius:4px;
+    outline:none;
+    border:1px solid var(--black)
+}
+.gender option{
+    padding:8px;
+}
+
+.register .number-password .button{
+    margin-top: 50px;
+    
+
+}
+.register .number-password .button p{
+    
+    width: 100px;
+    padding:8px 12px;
+    border:1px solid var(--blue);
+    border-radius: 3px;
+    margin-top:28px;
+    position: relative;
+    color: var(--blue);
+    text-align: center;
+}
+.register .number-password .button:hover p{
+    transition: 1s;
+    background-color: var(--blue);
+    color:var(--white);
+    box-shadow: 0 0 2px var(--blue);
+}
+
+
+.register .text{
+    
+    margin: auto 2%;
+    opacity: 100%;
+}
+.register .text h3{
+    color: rgb(131, 188, 235);
+}
+
+
+.social-media-register{
+    width:43%;
+    margin-right: 5%;
+    margin-left: 10%;
+    display: grid;
+    min-height: 220px;
+    
+
+}
+.title{
+    padding: 5px;
+    font-family: 500;
+    margin: 10px;
+}
+
+
+.social-media-register button{
+      padding:8px;
+      margin-bottom: 25px;
+      width:80%;
+      height: 50px;
+      border:none;
+      border-radius: 3px;
+}
+.social-media-register a{
+    padding:5px;
+}
+.social-media-register .facebook{
+    background-color: var(--blue);
+}
+.social-media-register .facebook:hover{
+    box-shadow: 0 0 2px var(--blue);
+}
+.social-media-register .google{
+    background-color: var(--red);
+}
+.social-media-register .google:hover{
+    box-shadow: 0 0 2px var(--red);
+}
+.social-media-register button .fa,
+.social-media-register button p
+{
+       margin:auto 20px;
+       font-size: 18px;
+       color:white
+
+}
+
+@media screen and (max-width: 800px) {
+    .register{
+        width:95%
+    }
+
+    .login{
+       
+        margin-right:3%;
+        margin-left:3%;
+    }
+    .register input{
+        width: 100%;
+    }
+    .social-media-register button{
+        
+        width:100%
+  }
+  .social-media-register{
+    
+    margin-right: 5%;
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 500px) {
+    .register{
+        margin-top:120px;
+        width:95%;
+        display: block;
+        padding-top:5px
+    }
+ 
+    .register h3{
+        text-align: center;
+    }
+
+    .login{
+       
+        margin-right:3%;
+        margin-left:3%;
+    }
+    .register input{
+        width: 100%;
+    }
+    .social-media-register button{
+        
+        width:100%
+  }
+  .social-media-register{
+    width:95%;
+    margin-right:2%;
+    margin-left: 3%;
+  }
+  .number-password{
+    width:95%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top:15px;
+    position: relative;
+    
+    
+}
+  
+
+
+}
